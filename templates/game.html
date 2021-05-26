@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>扎金花</title>
+</head>
+<body>
+    {% for poker in player1 %}
+        <img src="/static/poker/{{ poker }}"/>
+    {% endfor %}
+    <br>
+    {% for poker in player2 %}
+        <img src="/static/poker/{{ poker }}"/>
+    {% endfor %}
+    <br>
+    <h1>恭喜玩家{{ status }}获胜！</h1>
+</body>
+</html>
+{##}
+{#red_   红心#}
+{#black_ 黑桃#}
+{#cube_ 方块#}
+{#plum_ 梅花#}
